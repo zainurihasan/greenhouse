@@ -361,9 +361,9 @@ demo = {
     twaktu=tanwaktu.split(",");
     tppm=tanppm.split(",");
     tsuhu=tansuhu.split(",");
-    var tandatawaktu=twaktu;
-    var tandatappm=tppm;
-    var tandatasuhu=tsuhu;
+    var tandatawaktu=twaktu.slice(0,-1).reverse();
+    var tandatappm=tppm.slice(0,-1).reverse();
+    var tandatasuhu=tsuhu.slice(0,-1).reverse();
 
     var data = {
       labels: tandatawaktu,
@@ -451,13 +451,13 @@ demo = {
     
     
     // var chart_labels = ['JAN,ii', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    var chart_labels = labwaktu;
-    var chart_data = sensorph1;
-    var chart_data2 = sensorph2;
-    var chart_data3 = sensorph3;
-    var chart_data4 = sensorph4;
-    var chart_data5= sensorph5;
-    var chart_data6 = sensorph6;
+    var chart_labels = labwaktu.slice(0,-1).reverse();
+    var chart_data = sensorph1.slice(0,-1).reverse();
+    var chart_data2 = sensorph2.slice(0,-1).reverse();
+    var chart_data3 = sensorph3.slice(0,-1).reverse();
+    var chart_data4 = sensorph4.slice(0,-1).reverse();
+    var chart_data5= sensorph5.slice(0,-1).reverse();
+    var chart_data6 = sensorph6.slice(0,-1).reverse();
 
     var ctx = document.getElementById("chartBig12").getContext('2d');
 
@@ -608,13 +608,13 @@ demo = {
     sensor6 = st6.split(","); 
     
     // var chart_labels = ['JAN,ii', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-    var chart_labels = labwaktu;
-    var chart_data = sensor1;
-    var chart_data2 = sensor2;
-    var chart_data3 = sensor3;
-    var chart_data4 = sensor4;
-    var chart_data5= sensor5;
-    var chart_data6 = sensor6;
+    var chart_labels = labwaktu.slice(0,-1).reverse();
+    var chart_data = sensor1.slice(0,-1).reverse();
+    var chart_data2 = sensor2.slice(0,-1).reverse();
+    var chart_data3 = sensor3.slice(0,-1).reverse();
+    var chart_data4 = sensor4.slice(0,-1).reverse();
+    var chart_data5= sensor5.slice(0,-1).reverse();
+    var chart_data6 = sensor6.slice(0,-1).reverse();
 
     var ctx = document.getElementById("chartBig11").getContext('2d');
 
